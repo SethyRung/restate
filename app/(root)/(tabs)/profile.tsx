@@ -1,7 +1,6 @@
 import SettingsItem from "@/components/profile/SettingsItem";
 import { settings } from "@/constants/data";
 import icons from "@/constants/icons";
-import images from "@/constants/images";
 import { logout } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import {
@@ -33,7 +32,7 @@ export default function Profile() {
       >
         <View className="flex flex-row items-center justify-between">
           <Text className="text-xl font-rubik-bold">Profile</Text>
-          <View className="relative">
+          <TouchableOpacity className="relative">
             <Image
               source={icons.bell}
               className="size-6"
@@ -41,7 +40,7 @@ export default function Profile() {
               resizeMode="contain"
             />
             <View className="size-2 bg-primary-300/80 rounded-full absolute right-0 top-1"></View>
-          </View>
+          </TouchableOpacity>
         </View>
         <View className="flex flex-row justify-center mt-5">
           <View className="flex flex-col items-center relative mt-5">
