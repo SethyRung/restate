@@ -63,7 +63,7 @@ export default function Explore() {
           ></Card>
         )}
         keyExtractor={(item) => item.$id}
-        contentContainerClassName="pt-5 px-8 pb-32"
+        contentContainerClassName="pt-5 px-5 pb-32"
         columnWrapperClassName="flex gap-5"
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
