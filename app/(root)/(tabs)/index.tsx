@@ -13,7 +13,6 @@ import { useGlobalContext } from "@/lib/global-provider";
 import Search from "@/components/Search";
 import Card from "@/components/Cards/Card";
 import FeatureCard from "@/components/Cards/FeatureCard";
-import images from "@/constants/images";
 import Filters from "@/components/Filters";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
 import { router, useLocalSearchParams } from "expo-router";
