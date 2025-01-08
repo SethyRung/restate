@@ -28,7 +28,6 @@ export default function Property() {
     },
   });
 
-  console.log("\n\n", property);
   return (
     <View>
       <ScrollView contentContainerClassName="pb-32 bg-white">
