@@ -103,7 +103,7 @@ export default function Explore() {
             <View className="mt-4">
               <Filters />
               <Text className="mt-4 text-lg font-rubik-bold">
-                Found 182 Apartments
+                Found {properties?.length} Properties
               </Text>
             </View>
           </>
