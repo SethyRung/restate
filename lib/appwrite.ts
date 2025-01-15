@@ -41,7 +41,7 @@ export async function login() {
 
     const response = await account.createOAuth2Token(
       OAuthProvider.Google,
-      redirectUri
+      redirectUri.replace("///", "//--/")
     );
     if (!response) throw new Error("Create OAuth2 token failed");
 
@@ -62,7 +62,6 @@ export async function login() {
 
     return true;
   } catch (error) {
-    console.error(error);
     return false;
   }
 }

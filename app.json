@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "restate",
+    "name": "ReState",
     "slug": "restate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "restate",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sethyrung07.restate"
     },
     "web": {
       "bundler": "metro",
@@ -49,6 +50,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1ddd7124-31b9-4f1b-a455-0959175ed166"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1ddd7124-31b9-4f1b-a455-0959175ed166"
     }
   }
 }
