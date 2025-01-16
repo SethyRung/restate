@@ -10,6 +10,7 @@ import {
 } from "react-native-appwrite";
 import * as Linking from "expo-linking";
 import { openAuthSessionAsync } from "expo-web-browser";
+import { router } from "expo-router";
 
 export const config = {
   platform: process.env.EXPO_PUBLIC_PLATFORM,
@@ -47,7 +48,7 @@ export async function login() {
 
     const browserResult = await openAuthSessionAsync(
       response.toString(),
-      redirectUri
+      redirectUri.replace("///", "//--/")
     );
     if (browserResult.type !== "success")
       throw new Error("Create OAuth2 token failed");
