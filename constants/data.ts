@@ -63,19 +63,11 @@ export const categories = [
   { title: "Studios", category: "Studios" },
   { title: "Villas", category: "Villa" },
   { title: "Apartments", category: "Apartments" },
-  { title: "Townhomes", category: "Townhomes" },
+  { title: "Townhouse", category: "Townhouse" },
   { title: "Others", category: "Others" },
 ];
 
 export const settings = [
-  {
-    title: "My Bookings",
-    icon: icons.calendar,
-  },
-  {
-    title: "Payments",
-    icon: icons.wallet,
-  },
   {
     title: "Profile",
     icon: icons.person,
