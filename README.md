@@ -1,4 +1,4 @@
-# READMEestate
+# Restate
 
 "restate" is an React Native project designed for building universal applications that seamlessly run on Android, and iOS. This repository leverages file-based routing to provide a structured and efficient development experience.
 
